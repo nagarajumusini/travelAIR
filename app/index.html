@@ -1,0 +1,793 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="css/angular-material.css">
+  <link rel="stylesheet" href="css/custom.css">
+  
+  
+</head>
+<body ng-app="TravelApp" ng-cloak>
+  
+  <div class="FlexContainer">
+  	
+    <!-- Details starts -->
+    <div layout="row" layout-sm="column" layout-xs="column" layout-wrap class="prodetails">
+      <md-card flex="25" flex-sm="50" flex-xs="100">Department: AIR INDIA</md-card>
+      <md-card flex="25" flex-sm="50" flex-xs="100">Cost Center: Hyderabad</md-card>
+      <md-card flex="25" flex-sm="50" flex-xs="100">Project Code: AIR10999</md-card>
+      <md-card flex="25" flex-sm="50" flex-xs="100">Purpose of Travel: WORK</md-card>
+    </div>    
+    <!-- Details Ends -->
+    
+    <!-- List starts -->    
+    <md-content>
+        <div layout="column" layout-gt-xs="row">
+            
+            <md-card flex="20">
+                <h4>John Doe</h4>
+                <md-card-content>
+                    <p>EMP99090</p>
+                    <p>Software Engineer</p>
+                </md-card-content>
+            </md-card>
+            
+            <md-card flex="20">
+                <h4>John Doe</h4>
+                <md-card-content>
+                    <p>EMP99090</p>
+                    <p>Software Engineer</p>
+                </md-card-content>
+            </md-card>
+            
+            <md-card flex="20">
+                <h4>John Doe</h4>
+                <md-card-content>
+                    <p>EMP99090</p>
+                    <p>Software Engineer</p>
+                </md-card-content>
+            </md-card>
+            
+        </div>
+    </md-content>    
+    <!-- List ends -->
+    
+    <!-- Trip Details starts -->
+    <div layout="row" layout-sm="column" layout-xs="column" layout-wrap class="prodetails tripdetails">
+      <md-card flex="20" flex-sm="50" flex-xs="100">Trip: Mumbai(BOM) - Frankfurt(FRA)</md-card>
+      <md-card flex="20" flex-sm="50" flex-xs="100">Departing on: 23rd Jul</md-card>
+      <md-card flex="20" flex-sm="50" flex-xs="100">Returning on: 23rd Aug</md-card>
+      <md-card flex="20" flex-sm="50" flex-xs="100">Class: Economy</md-card>
+      <a href="" class="md-button md-ink-ripple">modify</a>
+    </div>    
+    <!-- Trip Details Ends -->
+    
+    
+    <!-- Attention starts -->    
+    <div layout-padding class="attention">
+    	Attention:
+    </div>
+    <!-- Attention ends --> 
+    
+    <!-- Travel Details starts -->
+  
+    
+    
+    
+    <div ng-init="accordion=1" class="search-list">
+    
+    <!-- Search List 1 ends -->
+	<div class="accordion" ng-class="{active:accordion==1}">
+		<div href ng-click="accordion = 1">
+        <div class="traveldetails" layout="row" layout-sm="column" layout-xs="row" layout-wrap>    	
+       
+            <!-- Trip Cost starts -->
+            <div flex="20" flex-sm="40" flex-xs="40">
+                <h4>$900</h4>
+                <p>Supplier</p>
+                <a href="">other offers +</a>
+            </div>
+            <!-- Trip Cost ends -->
+            
+            <!-- Trip Provider Image starts -->
+            <div flex="10" flex-sm="40" flex-xs="40" layout-padding>
+                <img src="img/emirates.png" width="75">
+                <p class="p-t-0 m-t-0">Emirates</p>
+            </div>
+            <!-- Trip Provider Image ends -->
+            
+            <!-- Favorite starts -->
+            <div flex="5" flex-sm="20" flex-xs="20" layout-padding>
+                <i class="material-icons">favorite_border</i>
+            </div>
+            
+            <div flex flex-sm="100" flex-xs="100" layout-wrap>
+                <div layout="row" layout-xs="row" layout-sm="row" layout-wrap>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>BOM</h4>
+                        <md-card-content>
+                            <p>09:00 AM</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>FRA</h4>
+                        <md-card-content>
+                            <p>12:00 PM+1</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>1 stop</h4>
+                        <md-card-content>
+                            <p>1hr 25m in BRU</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>10h 25m</h4>
+                        <md-card-content>
+                            <p>relaxed</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>9.8/10</h4>
+                        <md-card-content>
+                            <p><a href="">flight details</a></p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                   	<md-card><md-card-content> <md-button class="md-raised">Book</md-button> </md-card-content></md-card>
+                    </div>
+                    
+                </div>
+                <div layout="coloum" flex="100" class="layout-align-left returning-date">Returning on 23rd Aug</div><br><br>
+                
+                <div layout="row" layout-xs="row" layout-sm="row" layout-wrap>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>BOM</h4>
+                        <md-card-content>
+                            <p>09:00 AM</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>FRA</h4>
+                        <md-card-content>
+                            <p>12:00 PM+1</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>1 stop</h4>
+                        <md-card-content>
+                            <p>1hr 25m in BRU</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>10h 25m</h4>
+                        <md-card-content>
+                            <p>relaxed</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>9.8/10</h4>
+                        <md-card-content>
+                            <p></p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    
+                </div>
+            </div>       
+            
+        </div>
+        </div>
+	</div>
+	<div class="accordion-content" ng-show="accordion==1">
+    	<div ng-cloak>
+      <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+          <md-tab label="Departure">
+            <md-content class="md-padding tabs-content">
+                <div layout="row" layout-sm="column" layout-xs="column">
+            
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Departure</p>
+                            <p>Sun Mar 20</p>
+                            <p>4:15a</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Mumbai, India(<span class="location">BOM</span>) to Dubai, United Arab Emirates (<span class="location">DXB</span>)</p>
+                            <p>Emirates Airlines - Flight 501 / Airbus A380 (Jet)</p>
+                            <p>Economy/Coach Class</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Flight Time</p>
+                            <p>3h 20m</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content class="icons">
+                            <i class="material-icons">access_time</i>
+                            <i class="material-icons">local_drink</i>
+                            <i class="material-icons">wifi</i>
+                            <i class="material-icons">airplay</i>
+                            <i class="material-icons">power</i>
+                        </md-card-content>
+                    </md-card>
+                    
+                </div>
+            </md-content>
+          </md-tab>
+          <md-tab label="Return">
+            <md-content class="md-padding tabs-content">
+                <div layout="row"  layout-sm="column" layout-xs="column">
+            		
+                    <md-card>
+                        <md-card-content>
+                            <p>Departure</p>
+                            <p>Sun Mar 20</p>
+                            <p>4:15a</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content>
+                            <p>Mumbai, India(<span class="location">BOM</span>) to Dubai, United Arab Emirates (<span class="location">DXB</span>)</p>
+                            <p>Emirates Airlines - Flight 501 / Airbus A380 (Jet)</p>
+                            <p>Economy/Coach Class</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content>
+                            <p>Flight Time</p>
+                            <p>3h 20m</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content class="icons">
+                            <i class="material-icons">access_time</i>
+                            <i class="material-icons">local_drink</i>
+                            <i class="material-icons">wifi</i>
+                            <i class="material-icons">airplay</i>
+                            <i class="material-icons">power</i>
+                        </md-card-content>
+                    </md-card>
+                    
+                </div>
+            </md-content>
+          </md-tab>
+          
+        </md-tabs>
+      </md-content>
+    </div>
+    </div>
+	<!-- Search list 1 ends here -->
+    
+    
+    <!-- Search list 2 starts here -->    
+	<div class="accordion" ng-class="{active:accordion==2}">
+		<div href ng-click="accordion = 2">
+        <div class="traveldetails" layout="row" layout-sm="column" layout-xs="row" layout-wrap>    	
+       
+            <!-- Trip Cost starts -->
+            <div flex="20" flex-sm="40" flex-xs="40">
+                <h4>$900</h4>
+                <p>Supplier</p>
+                <a href="">other offers +</a>
+            </div>
+            <!-- Trip Cost ends -->
+            
+            <!-- Trip Provider Image starts -->
+            <div flex="10" flex-sm="40" flex-xs="40" layout-padding>
+                <img src="img/emirates.png" width="75">
+                <p class="p-t-0 m-t-0">Emirates</p>
+            </div>
+            <!-- Trip Provider Image ends -->
+            
+            <!-- Favorite starts -->
+            <div flex="5" flex-sm="20" flex-xs="20" layout-padding>
+                <i class="material-icons">favorite_border</i>
+            </div>
+            
+            <div flex flex-sm="100" flex-xs="100" layout-wrap>
+                <div layout="row" layout-xs="row" layout-sm="row" layout-wrap>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>BOM</h4>
+                        <md-card-content>
+                            <p>09:00 AM</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>FRA</h4>
+                        <md-card-content>
+                            <p>12:00 PM+1</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>1 stop</h4>
+                        <md-card-content>
+                            <p>1hr 25m in BRU</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>10h 25m</h4>
+                        <md-card-content>
+                            <p>relaxed</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>9.8/10</h4>
+                        <md-card-content>
+                            <p><a href="">flight details</a></p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                   	<md-card><md-card-content> <md-button class="md-raised">Book</md-button> </md-card-content></md-card>
+                    </div>
+                    
+                </div>
+                <div layout="coloum" flex="100" class="layout-align-left returning-date">Returning on 23rd Aug</div><br><br>
+                
+                <div layout="row" layout-xs="row" layout-sm="row" layout-wrap>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>BOM</h4>
+                        <md-card-content>
+                            <p>09:00 AM</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>FRA</h4>
+                        <md-card-content>
+                            <p>12:00 PM+1</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>1 stop</h4>
+                        <md-card-content>
+                            <p>1hr 25m in BRU</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>10h 25m</h4>
+                        <md-card-content>
+                            <p>relaxed</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>9.8/10</h4>
+                        <md-card-content>
+                            <p></p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    
+                </div>
+            </div>       
+            
+        </div>
+        </div>
+	</div>
+	<div class="accordion-content" ng-show="accordion==2">
+    	<div ng-cloak>
+      <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+          <md-tab label="Departure">
+            <md-content class="md-padding tabs-content">
+                <div layout="row" layout-sm="column" layout-xs="column">
+            
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Departure</p>
+                            <p>Sun Mar 20</p>
+                            <p>4:15a</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Mumbai, India(<span class="location">BOM</span>) to Dubai, United Arab Emirates (<span class="location">DXB</span>)</p>
+                            <p>Emirates Airlines - Flight 501 / Airbus A380 (Jet)</p>
+                            <p>Economy/Coach Class</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Flight Time</p>
+                            <p>3h 20m</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content class="icons">
+                            <i class="material-icons">access_time</i>
+                            <i class="material-icons">local_drink</i>
+                            <i class="material-icons">wifi</i>
+                            <i class="material-icons">airplay</i>
+                            <i class="material-icons">power</i>
+                        </md-card-content>
+                    </md-card>
+                    
+                </div>
+            </md-content>
+          </md-tab>
+          <md-tab label="Return">
+            <md-content class="md-padding tabs-content">
+                <div layout="row"  layout-sm="column" layout-xs="column">
+            		
+                    <md-card>
+                        <md-card-content>
+                            <p>Departure</p>
+                            <p>Sun Mar 20</p>
+                            <p>4:15a</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content>
+                            <p>Mumbai, India(<span class="location">BOM</span>) to Dubai, United Arab Emirates (<span class="location">DXB</span>)</p>
+                            <p>Emirates Airlines - Flight 501 / Airbus A380 (Jet)</p>
+                            <p>Economy/Coach Class</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content>
+                            <p>Flight Time</p>
+                            <p>3h 20m</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content class="icons">
+                            <i class="material-icons">access_time</i>
+                            <i class="material-icons">local_drink</i>
+                            <i class="material-icons">wifi</i>
+                            <i class="material-icons">airplay</i>
+                            <i class="material-icons">power</i>
+                        </md-card-content>
+                    </md-card>
+                    
+                </div>
+            </md-content>
+          </md-tab>
+          
+        </md-tabs>
+      </md-content>
+    </div>
+    </div>
+	<!-- Search list 2 ends here -->
+    
+    
+    <!-- Search list 3 starts here -->
+	<div class="accordion" ng-class="{active:accordion==3}">
+		<div href ng-click="accordion = 3">
+        <div class="traveldetails" layout="row" layout-sm="column" layout-xs="row" layout-wrap>    	
+       
+            <!-- Trip Cost starts -->
+            <div flex="20" flex-sm="40" flex-xs="40">
+                <h4>$900</h4>
+                <p>Supplier</p>
+                <a href="">other offers +</a>
+            </div>
+            <!-- Trip Cost ends -->
+            
+            <!-- Trip Provider Image starts -->
+            <div flex="10" flex-sm="40" flex-xs="40" layout-padding>
+                <img src="img/emirates.png" width="75">
+                <p class="p-t-0 m-t-0">Emirates</p>
+            </div>
+            <!-- Trip Provider Image ends -->
+            
+            <!-- Favorite starts -->
+            <div flex="5" flex-sm="20" flex-xs="20" layout-padding>
+                <i class="material-icons">favorite_border</i>
+            </div>
+            
+            <div flex flex-sm="100" flex-xs="100" layout-wrap>
+                <div layout="row" layout-xs="row" layout-sm="row" layout-wrap>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>BOM</h4>
+                        <md-card-content>
+                            <p>09:00 AM</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>FRA</h4>
+                        <md-card-content>
+                            <p>12:00 PM+1</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>1 stop</h4>
+                        <md-card-content>
+                            <p>1hr 25m in BRU</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>10h 25m</h4>
+                        <md-card-content>
+                            <p>relaxed</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>9.8/10</h4>
+                        <md-card-content>
+                            <p><a href="">flight details</a></p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                   	<md-card><md-card-content> <md-button class="md-raised">Book</md-button> </md-card-content></md-card>
+                    </div>
+                    
+                </div>
+                <div layout="coloum" flex="100" class="layout-align-left returning-date">Returning on 23rd Aug</div><br><br>
+                
+                <div layout="row" layout-xs="row" layout-sm="row" layout-wrap>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>BOM</h4>
+                        <md-card-content>
+                            <p>09:00 AM</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>FRA</h4>
+                        <md-card-content>
+                            <p>12:00 PM+1</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>1 stop</h4>
+                        <md-card-content>
+                            <p>1hr 25m in BRU</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="15" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>10h 25m</h4>
+                        <md-card-content>
+                            <p>relaxed</p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    <div flex="20" flex-sm="50" flex-xs="50">
+                    <md-card>
+                        <h4>9.8/10</h4>
+                        <md-card-content>
+                            <p></p>
+                        </md-card-content>
+                    </md-card>
+                    </div>
+                    
+                    
+                </div>
+            </div>       
+            
+        </div>
+        </div>
+	</div>
+	<div class="accordion-content" ng-show="accordion==3">
+    	<div ng-cloak>
+      <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+          <md-tab label="Departure">
+            <md-content class="md-padding tabs-content">
+                <div layout="row" layout-sm="column" layout-xs="column">
+            
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Departure</p>
+                            <p>Sun Mar 20</p>
+                            <p>4:15a</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Mumbai, India(<span class="location">BOM</span>) to Dubai, United Arab Emirates (<span class="location">DXB</span>)</p>
+                            <p>Emirates Airlines - Flight 501 / Airbus A380 (Jet)</p>
+                            <p>Economy/Coach Class</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content>
+                            <p>Flight Time</p>
+                            <p>3h 20m</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card flex="20" flex-sm="50" flex-xs="100">
+                        <md-card-content class="icons">
+                            <i class="material-icons">access_time</i>
+                            <i class="material-icons">local_drink</i>
+                            <i class="material-icons">wifi</i>
+                            <i class="material-icons">airplay</i>
+                            <i class="material-icons">power</i>
+                        </md-card-content>
+                    </md-card>
+                    
+                </div>
+            </md-content>
+          </md-tab>
+          <md-tab label="Return">
+            <md-content class="md-padding tabs-content">
+                <div layout="row"  layout-sm="column" layout-xs="column">
+            		
+                    <md-card>
+                        <md-card-content>
+                            <p>Departure</p>
+                            <p>Sun Mar 20</p>
+                            <p>4:15a</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content>
+                            <p>Mumbai, India(<span class="location">BOM</span>) to Dubai, United Arab Emirates (<span class="location">DXB</span>)</p>
+                            <p>Emirates Airlines - Flight 501 / Airbus A380 (Jet)</p>
+                            <p>Economy/Coach Class</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content>
+                            <p>Flight Time</p>
+                            <p>3h 20m</p>
+                        </md-card-content>
+                    </md-card>
+                    
+                    <md-card>
+                        <md-card-content class="icons">
+                            <i class="material-icons">access_time</i>
+                            <i class="material-icons">local_drink</i>
+                            <i class="material-icons">wifi</i>
+                            <i class="material-icons">airplay</i>
+                            <i class="material-icons">power</i>
+                        </md-card-content>
+                    </md-card>
+                    
+                </div>
+            </md-content>
+          </md-tab>
+          
+        </md-tabs>
+      </md-content>
+    </div>
+    </div>
+    
+    <!-- Search list 3 ends here -->
+    
+	</div>
+    
+    
+    
+    
+   </div> 
+  
+  
+
+  
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
+  <script src="js/angular-aria.min.js"></script>
+  <script src="js/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="js/angular-material.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+    /**
+     * You must include the dependency on 'ngMaterial' 
+     */
+    angular.module('TravelApp', ['ngMaterial'])
+	.controller('AppCtrl', function($scope) {});
+	
+  </script>
+  
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
